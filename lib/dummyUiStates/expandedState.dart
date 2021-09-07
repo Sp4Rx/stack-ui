@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 
 class ExpandedState extends StatelessWidget {
   final VoidCallback? onPressed;
+  final int index; //Just to show on UI
 
-  const ExpandedState({Key? key, this.onPressed}) : super(key: key);
+  const ExpandedState({
+    Key? key,
+    this.onPressed,
+    this.index = 0,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +20,7 @@ class ExpandedState extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'This is a bla bla description',
+              'This is a bla bla description $index',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 24,

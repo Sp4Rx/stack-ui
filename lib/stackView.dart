@@ -38,11 +38,15 @@ class StackViewState extends State<StackView> {
         onButtonPressed: (index) {
           setState(() {
             _maxStackCount = min(_maxStackCount + 1, itemsLength);
-            print(_maxStackCount);
             _buildChildren();
           });
         },
-        onHeaderPressed: (index) {},
+        onHeaderPressed: (index) {
+          setState(() {
+            _maxStackCount = max(index + 1, 1);
+            _buildChildren();
+          });
+        },
         key: item.key,
         collapsedState: item.collapsedState,
         expandedState: item.expandedState,

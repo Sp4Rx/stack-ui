@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class CollapsedState extends StatelessWidget {
-  const CollapsedState({Key? key}) : super(key: key);
+  final int index; //Just to show on UI
+  const CollapsedState({
+    Key? key,
+    this.index = 0,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +13,7 @@ class CollapsedState extends StatelessWidget {
       width: double.infinity,
       child: Center(
         child: Text(
-          'This is short info header',
+          'This is short info header $index',
           style: TextStyle(
             color: Colors.white,
             fontSize: 18,

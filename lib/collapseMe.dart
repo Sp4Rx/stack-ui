@@ -35,11 +35,15 @@ class _CollapseMeState extends State<CollapseMe> with TickerProviderStateMixin {
     // _expanded = widget.expanded;
     _expandedState = widget.expandedState ??
         ExpandedState(
+          index: widget.index,
           onPressed: () {
             widget.onButtonPressed?.call(widget.index);
           },
         );
-    _collapsedState = widget.collapsedState ?? CollapsedState();
+    _collapsedState = widget.collapsedState ??
+        CollapsedState(
+          index: widget.index,
+        );
   }
 
   @override
