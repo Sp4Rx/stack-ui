@@ -1,16 +1,25 @@
-# stack_ui
+# Stack UI
 
-A new Flutter project.
+Stack UI in flutter
 
-## Getting Started
+## Inspiration
 
-This project is a starting point for a Flutter application.
+Tried to create something similar to [this stack ui interactions](https://dribbble.com/shots/5721735-InVision-Studio-Spaced-App).
 
-A few resources to get you started if this is your first Flutter project:
+## Demo
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Imgur](https://i.imgur.com/X2yGrvu.gif)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## What's working
+
+- Basic interaction is working.
+
+## What's not working
+
+- Janky animations
+- Poor looking UI 😓
+
+## Todo
+
+- Make the design patter more flexible
+- Create a library someday. 😎
