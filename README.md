@@ -8,7 +8,7 @@ Tried to create something similar to [this stack ui interactions](https://dribbb
 
 ## Demo
 
-![Imgur](https://i.imgur.com/X2yGrvu.gif)
+![Imgur](https://i.giphy.com/media/ydu4gX01FtiYcqR4Rv/giphy.webp)
 
 ## What's working
 
